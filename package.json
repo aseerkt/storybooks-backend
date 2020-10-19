@@ -1,0 +1,31 @@
+{
+  "name": "storybooks-avr",
+  "version": "1.0.0",
+  "description": "StoryBooks Clone | Traversy Media",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node server",
+    "server": "cross-env NODE_ENV=development nodemon server",
+    "client-react": "cd frontend-react && yarn start",
+    "dev": "concurrently \"yarn server\" \"yarn client-react\" "
+  },
+  "author": "Aseer KT",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.5"
+  },
+  "dependencies": {
+    "connect-mongo": "^3.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
