@@ -3,4 +3,3 @@ frontend-vue/
 frontend-angular/
 node_modules
 .env
-yarn.lock
